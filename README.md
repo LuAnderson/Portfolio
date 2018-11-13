@@ -10,10 +10,6 @@ Execute `ng serve` para criar o servidor. Acesse `http://localhost:4200/`. O apl
 
 Execute `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist/`. Use o sinalizador `--prod` para uma construção de produção.
 
-## Ajuda
-
-Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
 ## Tecnologias utilizadas
 
 * Angular 7
@@ -21,7 +17,12 @@ Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular
 * HTML 5
 * SCSS
 
-###### Autor
+## Ajuda
 
-Nome: Lucas Anderson Lima
-Email: Lucasand96@gmail.com
+Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##### Autor
+
+**Nome:** Lucas Anderson Lima
+
+**Email:** Lucasand96@gmail.com
