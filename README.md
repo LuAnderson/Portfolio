@@ -1,4 +1,4 @@
-# Portfolio - Lucas 'AnDesenv' Lima
+# Portfólio - Lucas 'AnDesenv' Lima
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 7.0.5.
 
@@ -21,7 +21,7 @@ Execute `ng build` para construir o projeto. Os artefatos de construção serão
 
 Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##### Autor
+## Autor
 
 **Nome:** Lucas Anderson Lima
 
