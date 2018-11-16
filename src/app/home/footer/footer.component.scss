@@ -1,0 +1,141 @@
+@import "../../../variables.scss";
+
+.footer-distributed{
+	background-color: $primary-color;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+    
+    .footer-left,
+    .footer-center,
+    .footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer-left{
+        width: 40%;
+    }
+
+    h3{
+        color:  #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0;
+
+        span{
+            color:  #5383d3;
+        }
+    }
+
+    .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+
+        font-size: 18px;
+
+        a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+        }
+    }
+
+    .footer-my-name{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 1.5rem 0;
+    }
+
+    .footer-center{
+        width: 35%;
+
+        p{
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin:0;
+
+            span{
+                display: block;
+                font-weight: normal;
+                font-size:14px;
+                line-height:2;
+            }
+
+            a{
+                color:  #5383d3;
+                text-decoration: none;;
+            }
+        }
+    }
+
+    i{
+        background-color:  #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+
+        &.fa-envelope{
+            font-size: 17px;
+            line-height: 38px;
+        }
+    }
+
+    .footer-right{
+        width: 20%;
+    }
+
+    .footer-company-about{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+
+        span{
+            display: block;
+            color:  #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-icons{
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+        font: bold 14px sans-serif;
+        
+        .footer-left,
+        .footer-center,
+        .footer-right{
+            display: block;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-center i{
+            margin-left: 0;
+        }
+	}
+}

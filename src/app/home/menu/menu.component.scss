@@ -1,15 +1,20 @@
+@import "../../../variables.scss";
+
 .menu-andesenv{
-    background: #000000;
+    background: $primary-color;
     display: block;
-    text-align: center;
     width: -webkit-fill-available;
+
+    text-align: center;
     
     a {
-        color: #ffffff;
         display: inline-block;
-        font-family: monospace;     
         margin: 0 1rem;
         padding: 15px 16px;
+
+        color: #ffffff;
+
+        font: bold 1.3em monospace;
         text-transform: uppercase;
         text-decoration: none;
 
