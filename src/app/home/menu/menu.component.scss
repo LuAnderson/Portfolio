@@ -18,8 +18,16 @@
         text-transform: uppercase;
         text-decoration: none;
 
+        &:active,
+        &:hover{
+            border-radius: 1em 2em;
+        }
         &:hover{
             background: #545454;
+        }
+
+        &:active{
+            background: #5383d3;
         }
     }
 }
