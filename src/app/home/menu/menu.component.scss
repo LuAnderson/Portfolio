@@ -6,6 +6,11 @@
     width: -webkit-fill-available;
 
     text-align: center;
+
+    &.fixed{
+        position: fixed; 
+        top: 0; 
+    }
     
     a {
         display: inline-block;
