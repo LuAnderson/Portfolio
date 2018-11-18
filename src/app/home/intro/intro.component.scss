@@ -1,0 +1,61 @@
+.intro-andesenv {
+    height: 95vh;
+    width: 100%;
+
+    background-image: url("../../../assets/showcase_bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+    padding: 20% 0;
+
+    h1{
+        font: 100 4em cursive;
+
+        margin: 0 0 15px 0;
+
+        span{
+            color: #5383d3;
+        }
+    }
+
+    .intro-divider {
+        width: 20vw;
+        border: 1px solid #8d3601;
+    }
+
+    h3{
+        font: 100 2em monospace;
+        text-shadow: 2px 2px 3px rgba(0,0,0,1);
+    }
+
+    .social-andesenv{
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            margin: 0 5px;
+
+            font-family: monospace;
+
+            background: #393a42;
+            border: 1px solid #403f3f
+        }
+    }
+}
+
+
+@media (max-width: 880px) {
+    .intro-andesenv{
+        padding-top: 40% 0 0 0;
+    }
+}
+
+@media (min-width: 890px) and (max-width: 1240px) {
+    .intro-andesenv{
+        padding: 50% 0 0 0;
+    }
+}   
