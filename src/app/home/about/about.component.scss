@@ -1,0 +1,102 @@
+.about-andesenv{
+    color: #bbb;
+    background: #151515;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: #5383d3;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-info{
+        h3{
+            font: 100 1.5em monospace;
+            margin-bottom: 15px;   
+        }
+        
+        p{
+            font: 100 1em cursive;
+            margin: 0 40px 50px 0;
+        }
+    
+        .group-button{
+            text-align: center;
+            button{
+                text-transform: uppercase;
+                font: 700 1.1em monospace;
+                padding: 10px;
+    
+                &.cv{
+                    color: #69a9ec;
+                    border-color: #69a9ec;
+                    margin-right: 5%;
+                }
+            }
+        }
+    }
+
+    .box-skill{
+        font-family: cursive;
+
+        .bar{
+            padding: 2px;
+            margin: 0 0 10px 40px;
+            font-weight: bold;
+
+            &:after{
+                content:  "";
+                display: inline-block;
+                padding: 5px 0 5px 0px;
+                border-radius: 15px;  
+                background-color: #968b8e;  
+            }
+
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+            }
+        }
+
+        .bar.intermediate::after{
+            width: calc(60% - 10px);
+        }
+        .bar.advanced::after{
+            width: calc(80% - 10px);
+        }
+        .bar.expert::after{
+            width: calc(90% - 10px);
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .about-andesenv{
+        .group-button{
+            margin-bottom: 60px;
+        }
+
+        .box-skill .bar{
+            margin: 0 0 10px 0px;
+        }
+    }
+}
