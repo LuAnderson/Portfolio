@@ -6,9 +6,10 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
+import { ProfessionalComponent } from './professional/professional.component';
 
 @NgModule({
-  declarations: [HomeComponent, MenuComponent, FooterComponent, IntroComponent, AboutComponent],
+  declarations: [HomeComponent, MenuComponent, FooterComponent, IntroComponent, AboutComponent, ProfessionalComponent],
   imports: [
     CommonModule
   ],
