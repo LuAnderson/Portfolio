@@ -1,0 +1,59 @@
+.portfolio-andesenv{
+    color: #bbb;
+    background: #151515;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: #5383d3;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .swiper-slide-active,
+    .swiper-slide,
+    h6 {
+        text-align: center;
+    }
+    
+    img.mobile{ 
+        max-width: 75%;
+    }
+
+    h6{
+        font: 700 1.3em cursive;
+        cursor: pointer;
+        margin: 5% 0 0 0;
+    }
+}
+
+@media (max-width: 880px) {
+    .portfolio-andesenv{
+        img.mobile{ 
+            max-width: 100%;
+        }
+
+        h6{
+            margin: 10% 0 0 0;
+        }   
+    }
+}

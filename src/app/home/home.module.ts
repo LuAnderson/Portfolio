@@ -9,10 +9,13 @@ import { AboutComponent } from './about/about.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+import { SwiperModule } from 'ngx-swiper-wrapper';
+
 @NgModule({
   declarations: [HomeComponent, MenuComponent, FooterComponent, IntroComponent, AboutComponent, ProfessionalComponent, PortfolioComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SwiperModule
   ],
   exports: [
     HomeComponent
