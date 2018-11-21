@@ -1,0 +1,31 @@
+.trainning-andesenv{
+    color: #bbb;
+    background: #202020;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: #5383d3;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+}
