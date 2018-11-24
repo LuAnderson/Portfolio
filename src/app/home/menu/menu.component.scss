@@ -36,4 +36,11 @@
             background: #5383d3;
         }
     }
+
+    @media screen and (max-width: 480px){
+        &.fixed{
+            display: inline-flex;
+            overflow-y: scroll;
+        }
+    }
 }
