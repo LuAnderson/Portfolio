@@ -12,6 +12,10 @@
         top: 0; 
         z-index: 3;
     }
+
+    .logo-andesenv{
+        display: none;
+    }
     
     a {
         display: inline-block;
@@ -41,6 +45,14 @@
         &.fixed{
             display: inline-flex;
             overflow-y: scroll;
+
+            .logo-andesenv{
+                padding: 0px;
+                display: block;
+                color: white;
+                margin: 0 1rem;
+                font: bold 3em monospace;
+            }
         }
     }
 }
