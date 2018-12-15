@@ -12,7 +12,7 @@ export class PortfolioComponent implements OnInit {
     direction: 'horizontal',
     slidesPerView: 3,
     keyboard: true,
-    mousewheel: true,
+    mousewheel: false,
     navigation: true,
     spaceBetween: 20,
     centeredSlides: true,
