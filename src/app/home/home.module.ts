@@ -12,6 +12,7 @@ import { TrainningComponent } from './trainning/trainning.component';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { LibraryComponent } from './library/library.component';
+import { SmartphoneComponent } from './smartphone/smartphone.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { LibraryComponent } from './library/library.component';
     ProfessionalComponent,
     PortfolioComponent,
     TrainningComponent,
-    LibraryComponent
+    LibraryComponent,
+    SmartphoneComponent
   ],
   imports: [
     CommonModule,

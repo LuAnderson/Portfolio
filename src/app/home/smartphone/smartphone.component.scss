@@ -1,0 +1,106 @@
+.smartphone-andesenv{
+    color: #bbb;
+    background: #202020;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: #5383d3;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mobile-frame{
+        position: relative;
+        width: 400px;
+        margin-left: 60px;
+
+        img{
+            position: relative;
+            width: 400px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .frame-box{
+            position: absolute;
+            top: 102px;
+            left: 47px;
+            z-index: 2;
+            overflow-y: hidden;
+        }
+    }
+
+    .aplicativo{
+
+        .nome,
+        .descricao,
+        .informacao,
+        .download{
+            font-family: monospace;
+        }
+
+        .nome {
+            font-size: 1.5em;
+            text-transform: uppercase;
+
+            margin: 5vw 0 3vw 0;
+        }
+
+        .descricao {
+            font-size: 1.2em;
+            font-style: italic;
+
+            margin: 20px 0 40px 0;
+        }
+
+        .informacao {
+            margin: 40px 0;
+        }
+
+        .download{
+            color: #5383d3;
+            font-size: 1.2em;
+            text-align: center;
+            text-transform: uppercase;
+
+            margin-top: 10vw;
+        }
+
+        .icones{
+            text-align: center;
+
+            i{
+                font-size: 2.5em;
+
+                display: inline-flex;
+                margin: 15px 20px;
+                
+                cursor: pointer;
+
+                &:hover{
+                    color: #5383d3;
+                }
+            }
+        }
+    }
+}
