@@ -103,4 +103,21 @@
             }
         }
     }
+
+    @media (max-width: 620px){
+        .container{
+            padding: 0px;
+
+            .frame{
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+
+                .mobile-frame{
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
 }
