@@ -26,3 +26,5 @@ Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular
 **Nome:** Lucas Anderson Lima
 
 **Email:** Lucasand96@gmail.com
+
+**Linkedin:** linkedin.com/in/lucas-anderson-b7a035a7/ 
