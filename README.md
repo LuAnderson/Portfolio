@@ -2,9 +2,15 @@
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 7.0.5.
 
-## Servidor de Desenvolvimento
+## Requisitos
 
-Execute `ng serve` para criar o servidor. Acesse `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+[Node](https://nodejs.org/en/download/) Instalado na Versão 8.9 ou Superior    
+
+## Instalando e Configurando execução do projeto
+
+**1** - `npm install` - Vai realizar a instalação de dependências do projeto.
+
+**1.1** - `npm start` ou `ng serve` - Inicializara um servidor local e podera ser acessado com o seguinte link: `http://localhost:4200/`
 
 ## Build do Projeto
 
@@ -13,6 +19,7 @@ Execute `ng build` para construir o projeto. Os artefatos de construção serão
 ## Tecnologias utilizadas
 
 * Angular 7
+* Angular CLI
 * TypeScript
 * HTML 5
 * SCSS
@@ -27,4 +34,4 @@ Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular
 
 **Email:** Lucasand96@gmail.com
 
-**Linkedin:** linkedin.com/in/lucas-anderson-b7a035a7/ 
+[Linkedin](https://linkedin.com/in/lucas-anderson-b7a035a7)

@@ -42,7 +42,12 @@
             font-family: monospace;
 
             background: #393a42;
-            border: 1px solid #403f3f
+            border: 1px solid #403f3f;
+
+            &:hover{
+                background: #5383d3;
+                border: 1px solid;
+            }
         }
     }
 }

@@ -60,20 +60,25 @@
         }
 
         .nome {
-            font-size: 1.5em;
+            font-family: monospace;
+            font-size: 2em;
             text-transform: uppercase;
 
             margin: 5vw 0 3vw 0;
         }
 
         .descricao {
-            font-size: 1.2em;
+            font-size: 1.25em;
             font-style: italic;
 
             margin: 20px 0 40px 0;
         }
 
         .informacao {
+            font-size: 1.1em;
+            font-family: monospace;
+            letter-spacing: 1.5px;
+
             margin: 40px 0;
         }
 
@@ -106,7 +111,6 @@
 
     @media (max-width: 620px){
         .container{
-            padding: 0px;
 
             .frame{
                 padding: 0px;
