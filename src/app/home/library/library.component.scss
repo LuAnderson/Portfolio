@@ -125,8 +125,12 @@
     }  
 
     h6{
-        font: 700 1.3em cursive;
+        font: 700 1.3em Roboto Slab;
         margin: 7.5% 0 0 0;
+
+        &:hover{
+            color: #5383d3;
+        }
     }
      
     @media screen and (max-width: 767px) {

@@ -52,27 +52,27 @@
 
     .aplicativo{
 
-        .nome,
-        .descricao,
+        .name,
+        .descrition,
         .download,
-        .informacao,
-        .resumo{
-            font-family: monospace;
+        .about,
+        .info{
+            font-family: Roboto Slab;
         }
 
-        .nome {
+        .name {
             font-size: 2em;
 
             margin: 5vw 0 3vw 0;
         }
 
-        .descricao {
+        .descrition {
             font-size: 1.25em;
 
             margin: 20px 0 40px 0;
         }
 
-        .informacao {
+        .about {
             font-size: 1.1em;
             letter-spacing: 1.5px;
 
