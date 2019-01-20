@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .smartphone-andesenv{
-    color: #bbb;
-    background: #202020;
+    color: $octave-color;
+    background: $third-color;
     padding: 100px 0;
 
     .sobre{
@@ -16,7 +18,7 @@
                 margin-top: 15px;
 
                 div {
-                    background: #5383d3;
+                    background: $sixth-color;
                     height: 2px;
                     margin: 0 auto;
                     width: 77px;
@@ -73,14 +75,15 @@
         }
 
         .about {
-            font-size: 1.1em;
+            font-size: .9em;
+            font-style: italic;
             letter-spacing: 1.5px;
 
             margin: 40px 0;
         }
 
         .download{
-            color: #bbb;
+            color: $octave-color;
             font-size: 1.5em;
             text-align: center;
             margin-top: 7vw;
@@ -96,7 +99,7 @@
                 }
 
                 &:hover{
-                    color: #5383d3;
+                    color: $sixth-color;
                 }
             }
         }

@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .professional-andesenv{
-    color: #bbb;
-    background: #202020;
+    color: $octave-color;
+    background: $third-color;
     padding: 100px 0;
 
     .about{
@@ -17,7 +19,7 @@
                 margin-top: 15px;
 
                 div {
-                    background: #5383d3;
+                    background: $sixth-color;
                     height: 2px;
                     margin: 0 auto;
                     width: 77px;
@@ -54,7 +56,7 @@
                 top: 10%;   
                 right: -20px;
 
-                background: #bbb;
+                background: $octave-color;
             }
           
             &:last-child:before {
@@ -68,7 +70,7 @@
             border-radius: 50%;
             overflow: hidden;
 
-            background: #bbb;
+            background: $octave-color;
             text-align: center;
 
             position: absolute;
@@ -78,7 +80,7 @@
           
             i {
                 font-size: 35px;
-                color: #202020;
+                color: $third-color;
                 line-height: 80px;
 
                 z-index: 1;
@@ -91,14 +93,14 @@
             padding: 0 60px 0 30px;
             font: 700 2em monospace;
 
-            color: #4d5d5f;
+            color: $especial-color-font;
             text-align: right;
-            border-bottom: 2px solid #303a3b;
+            border-bottom: 2px solid $especial-color-border;
             position: relative;
           
             &:after {
                 content: "";
-                border-left: 10px solid #303a3b;
+                border-left: 10px solid $especial-color-border;
                 border-top: 10px solid transparent;
                 border-bottom: 10px solid transparent;
                 position: absolute;
@@ -122,13 +124,13 @@
 
             .title {
                 font: 700 1.3em Roboto Slab;
-                color: #5383d3;
+                color: $sixth-color;
                 margin-top: 0;
             }
 
             .description {
                 font: 300 1em monospace;
-                color: #b1b1b1;
+                color: $thirty-color;
                 line-height: 25px;
 
                 li{
@@ -158,7 +160,7 @@
                 .timeline-icon, &:before {
                     right: auto;
                     left: -20px;
-                    background: #bbb;
+                    background: $octave-color;
                 }
 
                 .timeline-icon {
@@ -176,7 +178,7 @@
 
                     &:after {
                         border-left: none;
-                        border-right: 10px solid #303a3b;
+                        border-right: 10px solid $especial-color-border;
                         right: 0px;
                     }
                 }
@@ -227,7 +229,7 @@
                     &:after {
                         left: auto;
                         right: 0px;
-                        border-right: 10px solid #303a3b;
+                        border-right: 10px solid $especial-color-border;
                         border-left: none;
                     }
                 }

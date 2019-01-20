@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .library-andesenv{
-    color: #bbb;
-    background: #151515;
+    color: $octave-color;
+    background: $second-color;
     padding: 100px 0;
 
     .sobre{
@@ -16,7 +18,7 @@
                 margin-top: 15px;
 
                 div {
-                    background: #5383d3;
+                    background: $sixth-color;
                     height: 2px;
                     margin: 0 auto;
                     width: 77px;
@@ -37,7 +39,7 @@
 
     .category{
         font: 700 1.75em monospace;
-        color: #5383d3;
+        color: $sixth-color;
 
         margin: 0 0 15px 0;
     }
@@ -55,7 +57,7 @@
     
         .card {
             font-size: 16px;
-            background-color: #292929;
+            background-color: $fourth-color;
 
             width: 100%;
             max-width: 300px;
@@ -71,7 +73,7 @@
             cursor: no-drop;
 
             &:hover {
-                background: #202020;
+                background: $third-color;
 
                 .text {
                     transition: all 0.5s ease;
@@ -82,7 +84,7 @@
 
             .title {
                 font: 600 1em monospace;
-                color: white;
+                color: $ninth-color;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 4px;
@@ -93,7 +95,7 @@
             }
 
             .text {
-                color: #bbb;
+                color: $octave-color;
                 font-weight: 200;
                 font-size: 13px;
                 letter-spacing: 2px;
@@ -108,10 +110,10 @@
             }
 
             .icon {
-                color: white;
+                color: $ninth-color;
                 font-size: 3em;
 
-                background: #5383d3;
+                background: $sixth-color;
                 margin: 0 auto;
                 width: 100%;
                 height: 80px;
@@ -129,7 +131,7 @@
         margin: 7.5% 0 0 0;
 
         &:hover{
-            color: #5383d3;
+            color: $sixth-color;
         }
     }
      

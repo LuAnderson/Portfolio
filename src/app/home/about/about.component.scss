@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .about-andesenv{
-    color: #bbb;
-    background: #151515;
+    color: $octave-color;
+    background: $second-color;
     padding: 100px 0;
 
     .sobre{
@@ -16,7 +18,7 @@
                 margin-top: 15px;
 
                 div {
-                    background: #5383d3;
+                    background: $sixth-color;
                     height: 2px;
                     margin: 0 auto;
                     width: 77px;
@@ -48,8 +50,8 @@
                 padding: 10px;
     
                 &.cv{
-                    color: #69a9ec;
-                    border-color: #69a9ec;
+                    color: $sixth-color;
+                    border-color: $sixth-color;
                     margin-right: 5%;
                 }
 
@@ -73,7 +75,7 @@
                 display: inline-block;
                 padding: 5px 0 5px 0px;
                 border-radius: 15px;  
-                background-color: #968b8e;  
+                background-color: $sixth-color;  
             }
 
             &:nth-last-child(1){

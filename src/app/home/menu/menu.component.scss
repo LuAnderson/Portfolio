@@ -22,9 +22,9 @@
         margin: 0 1rem;
         padding: 15px 16px;
 
-        color: #ffffff;
+        color: $ninth-color;
 
-        font: bold 1.3em Roboto Slab;
+        font: bold 1.1em Roboto Slab;
         text-transform: uppercase;
         text-decoration: none;
 
@@ -33,11 +33,11 @@
             border-radius: 1em 2em;
         }
         &:hover{
-            background: #545454;
+            background: $sixth-color;
         }
 
         &:active{
-            background: #5383d3;
+            background: $sixth-color;
         }
     }
 

@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .portfolio-andesenv{
-    color: #bbb;
-    background: #151515;
+    color: $octave-color;
+    background: $second-color;
     padding: 100px 0;
 
     .sobre{
@@ -16,7 +18,7 @@
                 margin-top: 15px;
 
                 div {
-                    background: #5383d3;
+                    background: $sixth-color;
                     height: 2px;
                     margin: 0 auto;
                     width: 77px;
@@ -45,7 +47,7 @@
         margin: 5% 0 0 0;
 
         &:hover{
-            color: #5383d3;
+            color: $sixth-color;
         }
     }
 }
