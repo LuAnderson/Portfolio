@@ -31,7 +31,7 @@
 
     .box-info{
         h3{
-            font: 100 1.5em monospace;
+            font: 100 1.5em sans-serif;
             margin-bottom: 15px;   
         }
         
@@ -52,12 +52,16 @@
                     border-color: #69a9ec;
                     margin-right: 5%;
                 }
+
+                &.info{
+                    cursor: no-drop;
+                }
             }
         }
     }
 
     .box-skill{
-        font-family: cursive;
+        font-family: sans-serif;
 
         .bar{
             padding: 2px;

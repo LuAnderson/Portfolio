@@ -54,53 +54,46 @@
 
         .nome,
         .descricao,
+        .download,
         .informacao,
-        .download{
+        .resumo{
             font-family: monospace;
         }
 
         .nome {
-            font-family: monospace;
             font-size: 2em;
-            text-transform: uppercase;
 
             margin: 5vw 0 3vw 0;
         }
 
         .descricao {
             font-size: 1.25em;
-            font-style: italic;
 
             margin: 20px 0 40px 0;
         }
 
         .informacao {
             font-size: 1.1em;
-            font-family: monospace;
             letter-spacing: 1.5px;
 
             margin: 40px 0;
         }
 
         .download{
-            color: #5383d3;
-            font-size: 1.2em;
+            color: #bbb;
+            font-size: 1.5em;
             text-align: center;
-            text-transform: uppercase;
+            margin-top: 7vw;
 
-            margin-top: 10vw;
-        }
-
-        .icones{
-            text-align: center;
-
-            i{
-                font-size: 2.5em;
-
+            li{
                 display: inline-flex;
-                margin: 15px 20px;
-                
+                margin: 0 1vw;
+
                 cursor: pointer;
+
+                i{
+                    margin: 0 .5vw;
+                }
 
                 &:hover{
                     color: #5383d3;

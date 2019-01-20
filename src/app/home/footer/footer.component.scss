@@ -121,6 +121,12 @@
 
     .footer-icons{
         margin-top: 25px;
+
+        i{
+            &:hover{
+                color: #5383d3;
+            }
+        }
     }
 }
 
