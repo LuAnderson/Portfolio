@@ -53,6 +53,11 @@
                     color: $sixth-color;
                     border-color: $sixth-color;
                     margin-right: 5%;
+
+                    &:hover{
+                        color: $ninth-color;
+                        border-color: $third-color;
+                    }
                 }
 
                 &.info{
