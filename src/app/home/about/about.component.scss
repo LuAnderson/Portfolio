@@ -33,12 +33,24 @@
 
     .box-info{
         h3{
-            font: 100 1.5em Roboto Slab;
+            font: 100 1.2em 'Droid Sans Mono';
             margin-bottom: 15px;   
+
+            &:after {
+                content: '';
+                border-right: .125em  solid white;
+                animation: typing 2s steps(21, end), blink .5s step-end infinite alternate;
+
+                @keyframes blink{
+                    0%{opacity: 0;}
+                    50%{opacity: .5;}
+                    100%{opacity: 1;}
+                }
+            }
         }
         
         p{
-            font: 100 1em Roboto Slab;
+            font: 100 1em 'Droid Sans Mono';
             margin: 0 40px 50px 0;
         }
     

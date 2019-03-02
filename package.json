@@ -26,6 +26,7 @@
     "ngx-swiper-wrapper": "^7.0.0",
     "npm": "^6.4.1",
     "rxjs": "~6.3.3",
+    "update": "^0.7.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
