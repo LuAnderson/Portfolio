@@ -12,15 +12,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
+  showMobileMenu() {
     const navbar = document.getElementById('navbar');
-    const sticky = navbar.offsetTop;
-
-    if (window.pageYOffset > sticky) {
-      navbar.classList.add('fixed');
-    } else {
-      navbar.classList.remove('fixed');
-    }
+    navbar.classList.toggle('active');
   }
+ 
 }
