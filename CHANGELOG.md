@@ -19,3 +19,10 @@
 > 1 = Ajusta rota de imagens
 > 2 - Remove informações não utilizadas
 > 3 - Ajusta configuração de buid
+
+[0.3.0] - 2020-02-22 
+
+### Feature
+> 1 = Adiciona lint - Configuração e dependencia
+> 2 - Adiciona configuração de edição - VSCODE 
+> 3 - Realiza ajustes nos componentes conforme lint
