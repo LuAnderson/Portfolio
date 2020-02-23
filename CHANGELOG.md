@@ -26,3 +26,10 @@
 > 1 = Adiciona lint - Configuração e dependencia
 > 2 - Adiciona configuração de edição - VSCODE 
 > 3 - Realiza ajustes nos componentes conforme lint
+
+[0.4.0] - 2020-02-22 
+
+### Feature
+> 1 = Adiciona primeiro test ao component de Header
+> 2 - Adiciona informação de autoria no package.json
+> 3 - Adiciona arquivo de formação VSCode
