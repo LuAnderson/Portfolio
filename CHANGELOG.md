@@ -47,3 +47,7 @@
 - 4 = Ajusta espaçamento no .prettierrc
 - 5 = Ajusta caminho do logo - component Header
 ---
+[0.7.0] - 2020-02-23 
+### Feature 
+- 1 = Adiciona commitizem/commitlint/convertional-changelog ao projeto
+---
