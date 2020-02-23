@@ -1,38 +1,93 @@
 import styled from 'styled-components';
 
-export const Header = styled.section`
-    align-items: center;
-    background-color: #282c34;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
-    justify-content: center;
-    min-height: 100vh;
+export const Navbar = styled.nav`
+    background: #000000;
+    display: block;
+    position: fixed;
+    right: 0;
     text-align: center;
-`;
+    top: 0;
+    width: -webkit-fill-available;
+    z-index: 3;
 
-export const Image = styled.img`
-    height: 40vmin;
-    pointer-events: none;
+    ${props => !props.showMenu} {
+        display: grid !important;
+        padding: 30px;
 
-    @media (prefers-reduced-motion: no-preference) {
-      animation: App-logo-spin infinite 20s linear;
+        a{
+            display: inline-block !important;
+        }
     }
-`;
 
-export const Text = styled.p`
+    @media screen and (max-width: 768px){
+        display: inline-flex;
+    };
 `;
 
 export const Anchor = styled.a`
-    color: #61dafb;
+    color: #ffffff;
+    display: inline-block;
+    font: bold 1.1em Roboto Slab;
+    margin: 0 1rem;
+    padding: 15px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
 
-    @keyframes App-logo-spin {
-        from {
-        transform: rotate(0deg);
+    &.active,
+    &:hover{
+        border-radius: 1em 2em;
+    }
+
+    &.active {
+        background-color: #5383d3;
+        color: #ffffff;
+    }
+
+    &:hover{
+        background: #5383d3;
+    }
+
+    @media screen and (max-width: 768px){
+        display: block;
+        padding: 12px 16px;
+        text-align: left;
+
+        &:not(:first-child) {
+            display: none;
         }
-        to {
-        transform: rotate(360deg);
+
+        &.icon {
+            display: block;
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
+
+        &.active{
+            border-radius: 1em 2em;
+        }
+    
+    }
+`;
+
+export const Icon = styled.i`
+    color: #ffffff;
+    display: block;
+    font: bold 3em monospace;
+    margin: 0 1rem;
+    padding: 0px;
+`;
+
+
+export const Logo = styled.span`
+    display: none;
+
+    @media screen and (max-width: 768px){
+        color: #ffffff;
+        display: block;
+        font: bold 3em monospace;
+        margin: 0 1rem;
+        padding: 0px;
     }
 `;

@@ -51,3 +51,7 @@
 ### Feature 
 - 1 = Adiciona commitizem/commitlint/convertional-changelog ao projeto
 ---
+[0.8.0] - 2020-02-23 
+### Feature 
+- 1 = Cria component de Header com KV
+---
