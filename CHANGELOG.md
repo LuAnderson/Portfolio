@@ -55,3 +55,7 @@
 ### Feature 
 - 1 = Cria component de Header com KV
 ---
+[0.9.0] - 2020-02-23 
+### Feature 
+- 1 = Cria styles de media queries
+---
