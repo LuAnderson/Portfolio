@@ -59,3 +59,7 @@
 ### Feature 
 - 1 = Cria styles de media queries
 ---
+[0.9.1] - 2020-02-23 
+### Style 
+- 1 = Utiliza novas media queries no componente de header
+---

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
+import { desktop, mobile } from '../../styles/media-queries';
+
 export const Navbar = styled.nav`
     background: #000000;
-    display: block;
     position: fixed;
     right: 0;
     text-align: center;
@@ -10,26 +11,28 @@ export const Navbar = styled.nav`
     width: -webkit-fill-available;
     z-index: 3;
 
-    ${props => !props.showMenu} {
-        display: grid !important;
-        padding: 30px;
-
-        a{
-            display: inline-block !important;
-        }
+    ${desktop} {
+        display: block;
     }
 
-    @media screen and (max-width: 768px){
+    ${mobile} {
         display: inline-flex;
-    };
+
+        ${props => !props.showMenu} {
+            display: grid !important;
+            padding: 30px;
+
+            a{
+                display: inline-block !important;
+            }
+        }
+    }
 `;
 
 export const Anchor = styled.a`
     color: #ffffff;
-    display: inline-block;
     font: bold 1.1em Roboto Slab;
     margin: 0 1rem;
-    padding: 15px 16px;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -47,7 +50,12 @@ export const Anchor = styled.a`
         background: #5383d3;
     }
 
-    @media screen and (max-width: 768px){
+    ${desktop} {
+        display: inline-block;
+        padding: 15px 16px;
+    }
+
+    ${mobile} {
         display: block;
         padding: 12px 16px;
         text-align: left;
@@ -63,11 +71,6 @@ export const Anchor = styled.a`
             right: 0;
             top: 0;
         }
-
-        &.active{
-            border-radius: 1em 2em;
-        }
-    
     }
 `;
 
@@ -79,11 +82,10 @@ export const Icon = styled.i`
     padding: 0px;
 `;
 
-
 export const Logo = styled.span`
     display: none;
 
-    @media screen and (max-width: 768px){
+    ${mobile} {
         color: #ffffff;
         display: block;
         font: bold 3em monospace;
