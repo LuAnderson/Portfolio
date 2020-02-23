@@ -2,5 +2,5 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5",
-    "tabWidth": 8
+    "tabWidth": 2
 }

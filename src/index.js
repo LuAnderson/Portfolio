@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/reset.css';
-import Home from './pages';
+
 import GlobalStyle from './styles/global';
+import Home from './pages';
+
 import * as serviceWorker from './serviceWorker';
+
+import './styles/reset.css';
 
 ReactDOM.render((
   <>

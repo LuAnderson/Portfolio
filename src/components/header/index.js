@@ -1,11 +1,10 @@
 import React from 'react';
 import * as S from './styles';
-import logo from '../../images/svg/logo.svg';
 
 function Header() {
   return(
     <S.Header className="App-header">
-      <S.Image src={logo} className="App-logo" alt="logo" />
+      <S.Image src='./logo.svg' className="App-logo" alt="logo" />
       <S.Text>
         Edit <code>src/App.js</code> and save to reload.
       </S.Text>
