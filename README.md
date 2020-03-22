@@ -1,37 +1,27 @@
-# Portfólio - Lucas 'AnDesenv' Lima
+# Portfolio
 
-Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 7.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
-## Requisitos
+## Development server
 
-[Node](https://nodejs.org/en/download/) Instalado na Versão 8.9 ou Superior    
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Instalando e Configurando execução do projeto
+## Code scaffolding
 
-**1** - `npm install` - Vai realizar a instalação de dependências do projeto.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-**1.1** - `npm start` ou `ng serve` - Inicializara um servidor local e podera ser acessado com o seguinte link: `http://localhost:4200/`
+## Build
 
-## Build do Projeto
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Execute `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist/`. Use o sinalizador `--prod` para uma construção de produção.
+## Running unit tests
 
-## Tecnologias utilizadas
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* Angular 7
-* Angular CLI
-* TypeScript
-* HTML 5
-* SCSS
+## Running end-to-end tests
 
-## Ajuda
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-Para obter mais ajuda sobre o uso do CLI Angular `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Further help
 
-## Autor
-
-**Nome:** Lucas Anderson Lima
-
-**Email:** Lucasand96@gmail.com
-
-[Linkedin](https://linkedin.com/in/lucas-anderson-b7a035a7)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
