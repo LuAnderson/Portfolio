@@ -1,0 +1,123 @@
+@import "../../../variables.scss";
+
+.smartphone-andesenv{
+    color: $octave-color;
+    background: $third-color;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: $sixth-color;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mobile-frame{
+        position: relative;
+        width: 400px;
+        margin-left: 60px;
+
+        img{
+            position: relative;
+            width: 400px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .frame-box{
+            position: absolute;
+            top: 102px;
+            left: 47px;
+            z-index: 2;
+            overflow-y: hidden;
+        }
+    }
+
+    .aplicativo{
+
+        .name,
+        .descrition,
+        .download,
+        .about,
+        .info{
+            font-family: Roboto Slab;
+        }
+
+        .name {
+            font-size: 2em;
+
+            margin: 5vw 0 3vw 0;
+        }
+
+        .descrition {
+            font-size: 1.25em;
+
+            margin: 20px 0 40px 0;
+        }
+
+        .about {
+            font-size: .9em;
+            font-style: italic;
+            letter-spacing: 1.5px;
+
+            margin: 40px 0;
+        }
+
+        .download{
+            color: $octave-color;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 7vw;
+
+            li{
+                display: inline-flex;
+                margin: 0 1vw;
+
+                cursor: pointer;
+
+                i{
+                    margin: 0 .5vw;
+                }
+
+                &:hover{
+                    color: $sixth-color;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 620px){
+        .container{
+
+            .frame{
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+
+                .mobile-frame{
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
