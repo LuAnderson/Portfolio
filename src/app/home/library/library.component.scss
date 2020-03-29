@@ -1,0 +1,147 @@
+@import "../../../variables.scss";
+
+.library-andesenv{
+    color: $octave-color;
+    background: $second-color;
+    padding: 100px 0;
+
+    .sobre{
+        margin-bottom: 80px;
+
+        h2{
+            font: 100 2.5em monospace;
+            text-transform: uppercase;
+            
+            margin: auto;
+
+            .horizontal-line {
+                margin-top: 15px;
+
+                div {
+                    background: $sixth-color;
+                    height: 2px;
+                    margin: 0 auto;
+                    width: 77px;
+                    &.top {
+                        margin-bottom: 3px;
+                        width: 44px;
+                    }
+                }
+            }
+        }
+    }
+
+    h6,
+    .category{
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .category{
+        font: 700 1.75em monospace;
+        color: $sixth-color;
+
+        margin: 0 0 15px 0;
+    }
+
+    .content {
+        padding: 0 4%;
+
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1024px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .card {
+            font-size: 16px;
+            background-color: $fourth-color;
+
+            width: 100%;
+            max-width: 300px;
+            min-width: 200px;
+            height: 250px;
+            margin: 0px 15px;
+
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+            border: 2px solid rgba(7, 7, 7, 0.12);
+            justify-content: center;
+
+            cursor: no-drop;
+
+            &:hover {
+                background: $third-color;
+
+                .text {
+                    transition: all 0.5s ease;
+                    opacity: 1;
+                    max-height:40px;
+                }
+            }
+
+            .title {
+                font: 600 1em monospace;
+                color: $ninth-color;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+
+                width: 100%;
+                margin: 0;
+                margin-top: 10%;
+            }
+
+            .text {
+                color: $octave-color;
+                font-weight: 200;
+                font-size: 13px;
+                letter-spacing: 2px;
+                text-align: center;
+
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 20px;
+                opacity: 0;
+                max-height:0;
+                transition: all .7s ease;
+            }
+
+            .icon {
+                color: $ninth-color;
+                font-size: 3em;
+
+                background: $sixth-color;
+                margin: 0 auto;
+                width: 100%;
+                height: 80px;
+                max-width: 80px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }  
+
+    h6{
+        font: 700 1.3em Roboto Slab;
+        margin: 7.5% 0 0 0;
+
+        &:hover{
+            color: $sixth-color;
+        }
+    }
+     
+    @media screen and (max-width: 767px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .content .card{
+            margin: 15px 0;
+        }
+    }
+}
