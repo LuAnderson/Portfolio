@@ -1,0 +1,87 @@
+@import "../../../variables.scss";
+
+.menu-andesenv{
+    background: $primary-color;
+    display: block;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: -webkit-fill-available;
+    z-index: 3;
+
+    &.active{
+        display: grid !important;
+        padding: 30px;
+
+        a{
+            display: inline-block !important;
+        }
+    }
+
+    a.icon,
+    .logo-andesenv{
+        display: none;
+    }
+
+    a {
+        display: inline-block;
+        margin: 0 1rem;
+        padding: 15px 16px;
+
+        color: $ninth-color;
+
+        font: bold 1.1em Roboto Slab;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &.active,
+        &:hover{
+            border-radius: 1em 2em;
+        }
+
+        &:hover{
+            background: $sixth-color;
+        }
+
+        &.active {
+            background-color: $sixth-color;
+            color: $ninth-color;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        display: inline-flex;
+
+        a {
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+
+            &:not(:first-child) {
+                display: none;
+            }
+
+            &.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                float: right;
+                display: block;
+            }
+
+            &.active{
+                border-radius: 1em 2em;
+            }
+        }
+
+        .logo-andesenv{
+            color: $ninth-color;
+            font: bold 3em monospace;
+
+            display: block;
+            margin: 0 1rem;
+            padding: 0px;
+        }
+    }
+}
