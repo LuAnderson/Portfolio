@@ -1,0 +1,207 @@
+@import "../../../variables.scss";
+
+.footer-andesenv{
+	background-color: $primary-color;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+    
+    .footer-left,
+    .footer-center,
+    .footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer-left{
+        width: 40%;
+
+        h3{
+            color:  $ninth-color;
+            font: normal 2em 'Cookie', cursive;
+
+            margin: 0;
+    
+            span{
+                color:  $sixth-color;
+            }
+        }
+
+        .footer-links{
+            color:  $ninth-color;
+            margin: 20px 0 12px;
+            padding: 0;
+    
+            font-size: 18px;
+    
+            a{
+                display:inline-block;
+                line-height: 1.8;
+                text-decoration: none;
+                color:  inherit;
+
+                &:hover{
+                    color: $sixth-color;
+                }
+            }
+        }
+    }
+
+    .footer-my-name{
+        color:  $thirty-color;
+        font: 100 14px Roboto Slab;
+
+        margin: 2.5rem 0;
+    }
+
+    .footer-center{
+        width: 35%;
+
+        p{
+            display: inline-block;
+            color: $ninth-color;
+            vertical-align: middle;
+            margin:0;
+
+            span{
+                display: block;
+                font-weight: normal;
+                font-size:14px;
+                line-height:2;
+            }
+
+            a{
+                color:  $sixth-color;
+                text-decoration: none;;
+            }
+        }
+    }
+
+    i{
+        background-color:  $fourth-color;
+        color: $ninth-color;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+
+        &.fa-envelope{
+            font-size: 17px;
+            line-height: 38px;
+        }
+    }
+
+    .footer-right{
+        width: 20%;
+    }
+
+    .footer-company-about{
+        line-height: 20px;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+
+        span{
+            display: block;
+            color:  $sixth-color;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-icons{
+        margin-top: 25px;
+
+        a{
+            &[data-tooltip] {
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+            }
+              
+            &[data-tooltip]:before,
+            &[data-tooltip]:after {
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+            }
+              
+            &[data-tooltip]:before {
+                position: absolute;
+                bottom: 150%;
+                left: 50%;
+                margin-bottom: 5px;
+                margin-left: -80px;
+                padding: 7px;
+                width: 160px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                background-color: #000;
+                background-color: hsla(0, 0%, 20%, 0.9);
+                color: #fff;
+                content: attr(data-tooltip);
+                text-align: center;
+                font-size: 14px;
+                line-height: 1.2;
+            }
+
+            &[data-tooltip]:after {
+                position: absolute;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -5px;
+                width: 0;
+                border-top: 5px solid #000;
+                border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                content: " ";
+                font-size: 0;
+                line-height: 0;
+            }
+            
+            &[data-tooltip]:hover:before,
+            &[data-tooltip]:hover:after {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            i{
+                &:hover{
+                    color: $sixth-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-andesenv{
+        font: bold 14px sans-serif;
+        
+        .footer-left,
+        .footer-center,
+        .footer-right{
+            display: block;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-center i{
+            margin-left: 0;
+        }
+	}
+}
