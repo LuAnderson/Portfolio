@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+  
+@import "reset.scss";
+@import "variables.scss";
+
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+
+html{
+    scroll-behavior: smooth;
+}
