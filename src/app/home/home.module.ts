@@ -8,6 +8,10 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { TrainningComponent } from './trainning/trainning.component';
+import { LibraryComponent } from './library/library.component';
+
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,12 @@ import { TrainningComponent } from './trainning/trainning.component';
     AboutComponent,
     ProfessionalComponent,
     TrainningComponent,
+    LibraryComponent,
+    PortfolioComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SwiperModule
   ],
   exports: [
     HomeComponent
