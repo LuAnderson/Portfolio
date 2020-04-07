@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { TrainningComponent } from './trainning/trainning.component';
 import { LibraryComponent } from './library/library.component';
+import { PublicationsComponent } from './publications/publications.component';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -24,6 +25,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     TrainningComponent,
     LibraryComponent,
     PortfolioComponent,
+    PublicationsComponent,
   ],
   imports: [
     CommonModule,
