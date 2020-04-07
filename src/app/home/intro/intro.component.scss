@@ -1,23 +1,71 @@
 @import "../../../variables.scss";
 
 .intro-andesenv {
-    height: 95vh;
-    width: 100%;
-
-    background-image: url("../../../assets/showcase_bg.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-image: url("../../../assets/showcase_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
     color: $ninth-color;
+    height: 95vh;
     text-align: center;
-    padding: 20% 0;
+    width: 100%;
 
-    .name-andesenv{
+    .arrow{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid #5383d3;
+            border-right: 5px solid #5383d3;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: animate 2s infinite;
+
+            &:nth-child(2){
+                animation-delay: -0.2s;
+            }
+
+            &:nth-child(3){
+                animation-delay: -0.4s;
+            }
+
+            @keyframes animate {
+                0%{
+                    opacity: 0;
+                    transform: rotate(45deg) translate(-20px,-20px);
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                    transform: rotate(45deg) translate(20px,20px);
+                }
+            }
+
+            @media (max-width: 880px) {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 880px) {
+        padding: 18vh 0;
+    }
+    
+    @media (min-width: 880px) {
+        background-position: center;
+        padding: 18% 0;
+    }   
+
+    .name-andesenv {
         font: 100 4em cursive;
-
-        margin: 0 0 15px 0;
+        margin: 0 0 26px 0;
 
         span{
             color: $sixth-color;
@@ -25,44 +73,60 @@
     }
 
     .intro-divider {
-        width: 20vw;
         border: 1px solid $sixth-color;
+        width: 20vw;
     }
 
-    .profission-andesenv{
+    .profission-andesenv {
         font: 100 2em Roboto Slab;
         text-shadow: 2px 2px 3px rgba(0,0,0,1);
+        
+        &:after {
+            animation: typing 1s steps(21, end), blink .1s step-end infinite alternate;
+            border-right: .125em  solid white;
+            content: '';
+
+            @keyframes blink{
+                0%{opacity: 0;}
+                50%{opacity: .5;}
+                100%{opacity: 1;}
+            }
+        }
+
+        #spin {
+            &:after {
+                animation: spin 3s linear infinite;
+                content:"Desenvolvedor ";
+            }
+
+            @keyframes spin {
+                0% {content:"Desenvolvedor F"}
+                5% {content:"Desenvolvedor Fr"}
+                10% {content:"Desenvolvedor Fro"}
+                15% {content:"Desenvolvedor Fron"}
+                20% {content:"Desenvolvedor Front"}
+                25% {content:"Desenvolvedor Front-"}
+                30% {content:"Desenvolvedor Front-E"}
+                40% {content:"Desenvolvedor Front-En"}
+                45% {content:"Desenvolvedor Front-End"}
+            }
+        }
     }
 
-    .social-andesenv{
+    .social-andesenv {
         a{
-            text-decoration: none;
-            color: $ninth-color;
-            text-transform: uppercase;
-            margin: 0 5px;
-
-            font-family: monospace;
-
             background: $fifth-color;
             border: 1px solid $fifth-color;
+            color: $ninth-color;
+            font-family: monospace;
+            margin: 0 5px;
+            text-decoration: none;
+            text-transform: uppercase;
 
-            &:hover{
+            &:hover {
                 background: $sixth-color;
                 border: 1px solid;
             }
         }
     }
 }
-
-
-@media (max-width: 880px) {
-    .intro-andesenv{
-        padding-top: 40% 0 0 0;
-    }
-}
-
-@media (min-width: 890px) and (max-width: 1240px) {
-    .intro-andesenv{
-        padding: 50% 0 0 0;
-    }
-}   

@@ -56,38 +56,39 @@
     
         .group-button{
             text-align: center;
-            button{
+
+            button {
                 text-transform: uppercase;
                 font: 700 1.1em monospace;
                 padding: 10px;
     
-                &.cv{
+                &.cv {
                     color: $sixth-color;
                     border-color: $sixth-color;
                     margin-right: 5%;
 
-                    &:hover{
+                    &:hover {
                         color: $ninth-color;
                         border-color: $third-color;
                     }
                 }
 
-                &.info{
+                &.info {
                     cursor: no-drop;
                 }
             }
         }
     }
 
-    .box-skill{
+    .box-skill {
         font-family: Roboto Slab;
 
-        .bar{
+        .bar {
             padding: 2px;
             margin: 0 0 10px 40px;
             font-weight: bold;
 
-            &:after{
+            &:after {
                 content:  "";
                 display: inline-block;
                 padding: 5px 0 5px 0px;
@@ -95,30 +96,30 @@
                 background-color: $sixth-color;  
             }
 
-            &:nth-last-child(1){
+            &:nth-last-child(1) {
                 margin-bottom: 0px;
             }
         }
 
-        .bar.intermediate::after{
+        .bar.intermediate::after {
             width: calc(60% - 10px);
         }
-        .bar.advanced::after{
+        .bar.advanced::after {
             width: calc(80% - 10px);
         }
-        .bar.expert::after{
+        .bar.expert::after {
             width: calc(90% - 10px);
         }
     }
 }
 
 @media (max-width: 880px) {
-    .about-andesenv{
-        .group-button{
+    .about-andesenv {
+        .group-button {
             margin-bottom: 60px;
         }
 
-        .box-skill .bar{
+        .box-skill .bar {
             margin: 0 0 10px 0px;
         }
     }

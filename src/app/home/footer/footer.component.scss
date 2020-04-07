@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .footer-andesenv{
-	background-color: $primary-color;
+    background-color: $primary-color;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -17,45 +17,23 @@
         vertical-align: top;
     }
 
-    .footer-left{
-        width: 40%;
+    .footer-right{
+        width: 20%;
 
         h3{
             color:  $ninth-color;
             font: normal 2em 'Cookie', cursive;
-
-            margin: 0;
+            margin: 0 0 20px;
     
             span{
                 color:  $sixth-color;
             }
         }
 
-        .footer-links{
-            color:  $ninth-color;
-            margin: 20px 0 12px;
-            padding: 0;
-    
-            font-size: 18px;
-    
-            a{
-                display:inline-block;
-                line-height: 1.8;
-                text-decoration: none;
-                color:  inherit;
-
-                &:hover{
-                    color: $sixth-color;
-                }
-            }
+        .footer-text{
+            color:  $thirty-color;
+            font: 100 14px Roboto Slab;
         }
-    }
-
-    .footer-my-name{
-        color:  $thirty-color;
-        font: 100 14px Roboto Slab;
-
-        margin: 2.5rem 0;
     }
 
     .footer-center{
@@ -99,86 +77,86 @@
         }
     }
 
-    .footer-right{
-        width: 20%;
-    }
+    .footer-left{
+        width: 40%;
 
-    .footer-company-about{
-        line-height: 20px;
-        font-size: 13px;
-        font-weight: normal;
-        margin: 0;
-
-        span{
-            display: block;
-            color:  $sixth-color;
-            font-size: 1rem;
-            font-weight: bold;
-            margin-bottom: 20px;
+        .footer-company-about{
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+    
+            span{
+                display: block;
+                color:  $sixth-color;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
         }
-    }
 
-    .footer-icons{
-        margin-top: 25px;
-
-        a{
-            &[data-tooltip] {
-                position: relative;
-                z-index: 2;
-                cursor: pointer;
-            }
-              
-            &[data-tooltip]:before,
-            &[data-tooltip]:after {
-                visibility: hidden;
-                opacity: 0;
-                pointer-events: none;
-            }
-              
-            &[data-tooltip]:before {
-                position: absolute;
-                bottom: 150%;
-                left: 50%;
-                margin-bottom: 5px;
-                margin-left: -80px;
-                padding: 7px;
-                width: 160px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                background-color: #000;
-                background-color: hsla(0, 0%, 20%, 0.9);
-                color: #fff;
-                content: attr(data-tooltip);
-                text-align: center;
-                font-size: 14px;
-                line-height: 1.2;
-            }
-
-            &[data-tooltip]:after {
-                position: absolute;
-                bottom: 150%;
-                left: 50%;
-                margin-left: -5px;
-                width: 0;
-                border-top: 5px solid #000;
-                border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-                border-right: 5px solid transparent;
-                border-left: 5px solid transparent;
-                content: " ";
-                font-size: 0;
-                line-height: 0;
-            }
-            
-            &[data-tooltip]:hover:before,
-            &[data-tooltip]:hover:after {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            i{
-                &:hover{
-                    color: $sixth-color;
+        .footer-icons{
+            margin-top: 25px;
+    
+            a{
+                &[data-tooltip] {
+                    position: relative;
+                    z-index: 2;
+                    cursor: pointer;
+                }
+                  
+                &[data-tooltip]:before,
+                &[data-tooltip]:after {
+                    visibility: hidden;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                  
+                &[data-tooltip]:before {
+                    position: absolute;
+                    bottom: 150%;
+                    left: 50%;
+                    margin-bottom: 5px;
+                    margin-left: -80px;
+                    padding: 7px;
+                    width: 160px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    background-color: #000;
+                    background-color: hsla(0, 0%, 20%, 0.9);
+                    color: #fff;
+                    content: attr(data-tooltip);
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 1.2;
+                }
+    
+                &[data-tooltip]:after {
+                    position: absolute;
+                    bottom: 150%;
+                    left: 50%;
+                    margin-left: -5px;
+                    width: 0;
+                    border-top: 5px solid #000;
+                    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    content: " ";
+                    font-size: 0;
+                    line-height: 0;
+                }
+                
+                &[data-tooltip]:hover:before,
+                &[data-tooltip]:hover:after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+    
+                i{
+                    &:hover{
+                        color: $sixth-color;
+                    }
                 }
             }
         }

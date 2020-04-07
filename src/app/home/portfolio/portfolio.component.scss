@@ -2,7 +2,7 @@
 
 .portfolio-andesenv{
     color: $octave-color;
-    background: $second-color;
+    background: $third-color;
     padding: 100px 0;
 
     .sobre{
@@ -42,8 +42,8 @@
     }
 
     h6{
+        cursor: no-drop;
         font: 700 1.3em Roboto Slab;
-        cursor: pointer;
         margin: 5% 0 0 0;
 
         &:hover{

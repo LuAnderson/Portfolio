@@ -3,7 +3,7 @@
 .menu-andesenv{
     background: $primary-color;
     display: block;
-    position: fixed;
+    position: sticky;
     right: 0;
     text-align: center;
     top: 0;
@@ -25,15 +25,13 @@
     }
 
     a {
+        color: $ninth-color;
         display: inline-block;
+        font: bold 1.1em Roboto Slab;
         margin: 0 1rem;
         padding: 15px 16px;
-
-        color: $ninth-color;
-
-        font: bold 1.1em Roboto Slab;
-        text-transform: uppercase;
         text-decoration: none;
+        text-transform: uppercase;
 
         &.active,
         &:hover{
@@ -55,19 +53,19 @@
 
         a {
             display: block;
-            text-align: left;
             padding: 12px 16px;
+            text-align: left;
 
             &:not(:first-child) {
                 display: none;
             }
 
             &.icon {
+                display: block;
+                float: right;
                 position: absolute;
                 right: 0;
                 top: 0;
-                float: right;
-                display: block;
             }
 
             &.active{
@@ -77,9 +75,8 @@
 
         .logo-andesenv{
             color: $ninth-color;
-            font: bold 3em monospace;
-
             display: block;
+            font: bold 3em monospace;
             margin: 0 1rem;
             padding: 0px;
         }
