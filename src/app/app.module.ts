@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
+import { DeviceDetectorModule } from 'ngx-device-detector';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    DeviceDetectorModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
