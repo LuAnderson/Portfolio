@@ -22,7 +22,7 @@
 
         h3{
             color:  $ninth-color;
-            font: normal 2em 'Cookie', cursive;
+            font: normal 2em 'Cookie', Roboto Slab;
             margin: 0 0 20px;
     
             span{
@@ -168,6 +168,10 @@
 
 	.footer-andesenv{
         font: bold 14px sans-serif;
+
+        .container{
+            padding: 0;
+        }
         
         .footer-left,
         .footer-center,
