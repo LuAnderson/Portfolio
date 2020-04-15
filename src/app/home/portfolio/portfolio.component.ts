@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
@@ -8,10 +9,11 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+  deviceInfo = null;
 
   public config: SwiperConfigInterface = {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: this.deviceService.isMobile() ? 2 : 3,
     keyboard: true,
     mousewheel: false,
     navigation: true,
@@ -20,7 +22,7 @@ export class PortfolioComponent implements OnInit {
     autoplay: true,
   };
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   ngOnInit() {
   }
