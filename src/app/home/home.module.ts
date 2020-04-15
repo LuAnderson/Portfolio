@@ -7,12 +7,10 @@ import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { ProfessionalComponent } from './professional/professional.component';
-import { TrainningComponent } from './trainning/trainning.component';
-import { LibraryComponent } from './library/library.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +20,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     IntroComponent,
     AboutComponent,
     ProfessionalComponent,
-    TrainningComponent,
-    LibraryComponent,
     PortfolioComponent,
     PublicationsComponent,
   ],
