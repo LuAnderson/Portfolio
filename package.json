@@ -23,6 +23,7 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
+    "ngx-device-detector": "^1.4.2",
     "ngx-swiper-wrapper": "^9.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
