@@ -74,7 +74,13 @@
                 }
 
                 &.info {
-                    cursor: no-drop;
+                    @media (max-width: 880px) {
+                        display: none;
+                    }
+
+                    @media (min-width: 880px) {
+                        cursor: no-drop;
+                    }
                 }
             }
         }
@@ -102,7 +108,7 @@
         }
 
         .bar.intermediate::after {
-            width: calc(60% - 10px);
+            width: calc(75% - 10px);
         }
         .bar.advanced::after {
             width: calc(80% - 10px);
