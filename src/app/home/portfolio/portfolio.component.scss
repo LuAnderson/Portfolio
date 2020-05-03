@@ -1,6 +1,6 @@
 @import "../../../variables.scss";
 
-.portfolio-andesenv{
+.portfolio-andesenv {
     color: $octave-color;
     background: $third-color;
     padding: 100px 0;
@@ -31,14 +31,76 @@
         }
     }
     
-    .swiper-slide-active,
-    .swiper-slide,
-    h6 {
-        text-align: center;
-    }
-    
-    img.mobile{ 
-        max-width: 75%;
+    .group {
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        width: 100%;
+
+        @media (max-width: 880px) {
+            flex-direction: column;
+        }
+
+        > .project {
+            display: flex;
+            flex-direction: column;
+            font-family: monospace;
+            margin-bottom: 56px;
+
+            @media (min-width: 880px) {
+                width: 50%;
+            }
+
+            @media (max-width: 880px) {
+                align-items: end;
+                width: 100%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            > img.tumblr { 
+                cursor: pointer;
+                border-radius: 10px;
+                height: 252px;
+                width: 500px;
+
+                @media (max-width: 880px) {
+                    height: 194px;
+                    width: 100%;
+                }
+            }
+
+            > .name {
+                color: $sixth-color;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 10px 0 5px;
+            }
+
+            > .description {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            > .skills {
+                margin: 14px 0 0;
+                display: inline-flex;
+                width: 100%;
+
+                > span {
+                    background: $tithe-color;
+                    border-radius: 14px;
+                    color: $octave-color;
+                    font-size: 16px;
+                    margin-right: 10px;
+                    padding: 5px;
+                }
+            }
+        }
     }
 
     h6{
@@ -50,6 +112,7 @@
             cursor: no-drop;
             font: 700 1.3em Roboto Slab;
             margin: 7.5% 0 0 0;
+            text-align: center;
 
             &:hover{
                 color: $sixth-color;
