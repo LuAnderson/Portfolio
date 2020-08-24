@@ -1,3 +1,17 @@
-<app-home></app-home>
+<div class="fixed">
+    <label for="">
+        <select #langselect (change)="translate.use(langselect.value)">
+            <option 
+                *ngFor="let lang of translate.getLangs(); let item = index" 
+                [value]="lang"
+            > 
+                {{ country[item] }}
+            </option>
+        </select>
+        <img #langselect (change)="translate.use(langselect.value)" [src]="('home.flag' | translate)" alt="" class="flag">
 
-<router-outlet></router-outlet>
+    </label>
+</div>
+<app-home [master]="('home' | translate)"></app-home>
+
+<!-- <router-outlet></router-outlet> -->
