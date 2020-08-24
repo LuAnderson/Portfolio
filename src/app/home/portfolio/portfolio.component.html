@@ -6,7 +6,7 @@
   >
     <div class="row sobre">
       <h2>
-        PORTFÓLIO
+        {{ content.title }}
         <div class="horizontal-line">
           <div class="top"></div>
           <div class="bottom"></div>
@@ -16,23 +16,19 @@
   </div>
 
   <div class="container" data-aos="flip-up">
-    <section class="group">
+    <section class="group" *ngFor="let item of content.projects">
       <div class="project" data-aos="zoom-in-down">
-        <img src="../../../assets/divide-comigo-1.png" alt="portfolio" class="tumblr">
-        <p class="name">Divide Comigo</p>
-        <p class="description">Site para inscrições e divulgações de cursos, palestras e workshops</p>
+        <img src="{{ item.image.path }}" alt="{{ item.image.alt }}" class="tumblr">
+        <p class="name">{{ item.title }}</p>
+        <p class="description">{{ item.description }}</p>
         <div class="skills">
-          <span>Axios</span>
-          <span>React</span>
-          <span>Styled Component</span>
-          <span>Hooks</span>
+          <span *ngFor="let item of item.skills ">{{ item }}</span>
         </div>
       </div>
     </section>
 
-    <h6>Ver Mais Projetos</h6>
+    <h6>{{ content.button }}</h6>
   </div>
-
 
   <div class="to-top" data-aos="zoom-in-down">
     <a href="#intro">

@@ -6,7 +6,7 @@
       data-aos-duration="1500"
     >
       <h2>
-        PUBLICAÇÕES
+        {{ content.title }}
         <div class="horizontal-line">
           <div class="top"></div>
           <div class="bottom"></div>
@@ -14,34 +14,20 @@
       </h2>
     </div>
     <div class="content" data-aos="zoom-in-down">
-        <a class="card" 
-          href="https://medium.com/wooza/git-stash-conhecendo-e-utilizando-um-dos-comandos-mais-pr%C3%A1ticos-para-o-versionamento-de-seu-c%C3%B3digo-a4dab3ac70da" 
-          target="_blank"
-        >
-          <div class="icon"><i class="fab fa-github"></i></div>
-          <p class="title">Git Stash</p>
-          <p class="text">Conhecendo e utilizando um dos comandos mais práticos para...</p>
-        </a>
-        <a 
-          class="card"
-          href="https://medium.com/@LuAnderson96/feedback-a-import%C3%A2ncia-e-o-poder-f430fe4e822"
-          target="_blank"
-        >
-          <div class="icon"><i class="fas fa-comments"></i></div>
-          <p class="title">FeedBack</p>
-          <p class="text">A importância e o poder</p>
-        </a>
-        <a class="card" 
-          href="https://pt.slideshare.net/LuccasAnderson/trabalhando-de-forma-assncrona-com-javascript"
-          target="_blank"
-        >
-          <div class="icon"><i class="fab fa-js-square"></i></div>
-          <p class="title">Javascript Assíncrono</p>
-          <p class="text">Callbacks, Promises e Async Functions</p>
-        </a>
+        <div *ngFor="let item of content.list">
+            <a 
+              class="card" 
+              href="{{item.path}}" 
+              target="_blank"
+            >
+            <div class="icon"><i class="{{item.icon}}"></i></div>
+            <p class="title">{{item.title}}</p>
+            <p class="text">{{item.description}}</p>
+          </a>
+        </div>
     </div>
 
-    <h6>Ver Mais...</h6>
+    <h6>{{ content.button }}</h6>
 
   </div>
 </section>

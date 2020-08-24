@@ -1,0 +1,48 @@
+.fixed {
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    z-index: 4;
+
+    @media (min-width: 880px) {
+        right: 30px;
+        top: 4px;
+    }
+
+    @media (max-width: 880px) {
+        bottom: 35px;
+        right: 30px;
+    }
+
+    label {
+        align-items: center; 
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        height: 45px;
+        width: 45px;
+    }
+    
+    select {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 15px;
+        outline: none;
+
+        option {
+            height: 100px;
+            padding: 20px;
+            width: 100px;
+        }
+
+        option[value=pt],
+        option[value=en] {
+            color: #000;
+        }
+    }
+}

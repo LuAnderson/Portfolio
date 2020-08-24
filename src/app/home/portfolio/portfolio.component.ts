@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
 
   constructor() { }
+  @Input('data') content: any; // tslint:disable-line: no-input-rename
 
   ngOnInit() {
   }

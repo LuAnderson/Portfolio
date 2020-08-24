@@ -5,7 +5,7 @@
           data-aos="flip-up"
           data-aos-duration="1500"
         >
-          SOBRE MIM
+        {{ content.title }}
           <div class="horizontal-line">
             <div class="top"></div>
             <div class="bottom"></div>
@@ -24,49 +24,44 @@
               I speak code
             </h3>
           </div>
-          <p>
-            Sou o Lucas Anderson, tenho 24 anos de idade; atualmente trabalho na
-            empresa <i>Wooza</i>, onde atuo no desenvolvimento de soluções web para uma das maiores empresas de telecomunicação do Brasil.
-          </p>
-          <p>
-            Gosto de atuar com otimização de processos e projeção de desenvolvimento
-            escalável, tenho como hobby o desenvolvimento mobile, fotografia e patinação.
+          <p *ngFor="let texts of content.description">
+            {{ texts }}
           </p>
           <div class="group-button">
             <a download="LucasLima-Curriculo" href="../../../assets/LLima-Curriculo.pdf">
               <button class="btn btn-outline-secondary cv" type="button">
-                <i class="fa fa-download"></i> Baixar Currículo Completo
+                <i class="fa fa-download"></i> {{ content.buttons.download }}
               </button>
             </a>
             <button class="btn btn-outline-secondary info" type="button">
-              Mais Informações
+              {{ content.buttons.informations }}
             </button>
           </div>
         </div>
         <div class="box-skill col-sm-6" data-aos="zoom-in-up">
           <div class="bar expert">
             <p>
-              React - Angular - Vue
+              {{ content.skills.frameworks }}
             </p>
           </div>
           <div class="bar expert">
             <p>
-              CSS - SCSS - LESS - StyledComponent 
+              {{ content.skills.styles }}
             </p>
           </div>
           <div class="bar advanced">
             <p>
-              Testes Unitários (JEST)
+              {{ content.skills.test }}
+            </p>
+          </div>
+          <div class="bar expert">
+            <p>
+              {{ content.skills.data }}
             </p>
           </div>
           <div class="bar advanced">
             <p>
-              Storybook / Webpack / Gatsby / Gulp
-            </p>
-          </div>
-          <div class="bar intermediate">
-            <p>
-              Azure / Fetch API / Axios
+              {{ content.skills.lib }}
             </p>
           </div>
         </div>

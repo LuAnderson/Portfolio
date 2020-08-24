@@ -50,80 +50,83 @@
         max-width: 1024px;
         padding: 0 4%;
         width: 100%;
-    
-        .card {
-            background-color: $fourth-color;
-            border-radius: 10px;
-            border: 2px solid rgba(7, 7, 7, 0.12);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-            cursor: pointer;
-            font-size: 16px;
-            height: 250px;
-            justify-content: center;
+
+        div {
             margin: 0px 15px;
             max-width: 300px;
-            min-width: 200px;
-            text-decoration: none;
             width: 100%;
 
-            &:hover {
-                background: $third-color;
+            .card {
+                background-color: $fourth-color;
+                border-radius: 10px;
+                border: 2px solid rgba(7, 7, 7, 0.12);
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+                cursor: pointer;
+                font-size: 16px;
+                height: 250px;
+                justify-content: center;
+                min-width: 200px;
+                text-decoration: none;
+
+                &:hover {
+                    background: $third-color;
+
+                    .text {
+                        margin-top: 12px;
+                        max-height: 70px;
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                    }
+                }
+
+                .title {
+                    color: $ninth-color;
+                    font: 600 1em monospace;
+                    letter-spacing: 4px;
+                    margin-top: 10%;
+                    margin: 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
 
                 .text {
-                    margin-top: 12px;
-                    max-height: 70px;
-                    opacity: 1;
-                    transition: all 0.5s ease;
-                }
-            }
+                    color: $octave-color;
+                    font-size: 13px;
+                    font-weight: 200;
+                    letter-spacing: 2px;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 80%;
 
-            .title {
-                color: $ninth-color;
-                font: 600 1em monospace;
-                letter-spacing: 4px;
-                margin-top: 10%;
-                margin: 0;
-                text-align: center;
-                text-transform: uppercase;
-                width: 100%;
-            }
+                    @media screen and (min-width: 767px) {
+                        margin-top: 20px;
+                        max-height: 0;
+                        opacity: 0;
+                        transition: all .7s ease;
+                    }
 
-            .text {
-                color: $octave-color;
-                font-size: 13px;
-                font-weight: 200;
-                letter-spacing: 2px;
-                margin: 0 auto;
-                text-align: center;
-                width: 80%;
-
-                @media screen and (min-width: 767px) {
-                    margin-top: 20px;
-                    max-height: 0;
-                    opacity: 0;
-                    transition: all .7s ease;
+                    @media screen and (max-width: 767px) {
+                        margin-top: 12px;
+                        max-height: 70px;
+                        opacity: 1;
+                        transition: all .5s ease;
+                    }
                 }
 
-                @media screen and (max-width: 767px) {
-                    margin-top: 12px;
-                    max-height: 70px;
-                    opacity: 1;
-                    transition: all .5s ease;
+                .icon {
+                    align-items: center;
+                    background: $sixth-color;
+                    border-radius: 100%;
+                    color: white;
+                    display: flex;
+                    font-size: 3em;
+                    height: 80px;
+                    justify-content: center;
+                    margin: 12px auto;
+                    max-width: 80px;
+                    width: 100%;
                 }
-            }
-
-            .icon {
-                align-items: center;
-                background: $sixth-color;
-                border-radius: 100%;
-                color: white;
-                display: flex;
-                font-size: 3em;
-                height: 80px;
-                justify-content: center;
-                margin: 12px auto;
-                max-width: 80px;
-                width: 100%;
             }
         }
     }  

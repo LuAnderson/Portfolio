@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
@@ -11,6 +11,8 @@ export class MenuComponent implements OnInit {
 
   constructor(private deviceService: DeviceDetectorService) {
   }
+
+  @Input('data') content: any; // tslint:disable-line: no-input-rename
 
   ngOnInit(): void {
   }
