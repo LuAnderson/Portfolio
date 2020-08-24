@@ -1,0 +1,210 @@
+{
+    "home": {
+        "flag": "../assets/pt.svg",
+        "menu": [
+            {
+                "id": "#inicio",
+                "text": "Inicio"
+            },
+            {
+                "id": "#profissional",
+                "text": "Profissional"
+            },
+            {
+                "id": "#publications",
+                "text": "Publicações"
+            },
+            {
+                "id": "#portfolio",
+                "text": "Portfólio"
+            },
+            {
+                "id": "#contato",
+                "text": "Contato"
+            }
+        ],
+        "about": {
+            "title": "Sobre Mim",
+            "description": [
+                "Sou o Lucas Anderson, tenho 24 anos de idade; atualmente trabalho na empresa Wooza, onde atuo no desenvolvimento de soluções web para uma das maiores empresas de telecomunicação do Brasil.",
+                "Gosto de atuar com otimização de processos e projeção de desenvolvimento escalável, tenho como hobby o desenvolvimento mobile, fotografia e patinação."
+            ],
+            "buttons": {
+                "download": "Baixar Currículo Completo",
+                "informations": "Mais Informações"
+            },
+            "skills": {
+                "frameworks": "React - Angular - Vue",
+                "styles": "CSS - SCSS - LESS - StyledComponent",
+                "test": "Testes Unitários (Jest)",
+                "data": "Fetch API - Axios - Azure",
+                "lib": "Storybook - Webpack - Gatsby - Gulp"
+            }
+        },
+        "professional": {
+            "title": "Carreira Profissional",
+            "timeline": [
+                {
+                    "box": {
+                        "effect": "fade-left",
+                        "icon": "fas fa-user-tie",
+                        "year": "2019 - Atual"
+                    },
+                    "company": {
+                        "name": "Wooza",
+                        "title": "Desenvolvedor Front End",
+                        "state": " - Pleno - ",
+                        "responsibilities": [
+                            "Desenvolvimento e Manutenção de projetos utilizando React, VueJS, Angular 2+, AngularJS e Testes Unitários",
+                            "Estilização, desenvolvimento e integração a API"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-right",
+                        "icon": "fas fa-graduation-cap",
+                        "year": "2019 - 2021"
+                    },
+                    "company": {
+                        "name": null,
+                        "title": "Graduação - Analise e Desenvolvimento de Sistemas",
+                        "state": null,
+                        "responsibilities": [
+                            "UVA - Universidade Veiga de Almeida",
+                            "Preparo para atuar nas áreas de desenvolvimento de software",
+                            "Cursando o terceiro semestre"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-left",
+                        "icon": "fas fa-user-tie",
+                        "year": "2019 - 2019"
+                    },
+                    "company": {
+                        "name": "BeeJobs",
+                        "title": "Desenvolvedor Front End Angular - ",
+                        "state": null,
+                        "responsibilities": [
+                            "Desenvolvimento do wireframe",
+                            "Coordenação e suporte aos programadores web/mobile",
+                            "Estilização, desenvolvimento e integração a API"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-right",
+                        "icon": "fas fa-code",
+                        "year": "2017 - Atual"
+                    },
+                    "company": {
+                        "name": null,
+                        "title": "Freelancer",
+                        "state": null,
+                        "responsibilities": [
+                            "Desenvolvedor Front End",
+                            "SEO | Web Mobile",
+                            "Web Performance e PageSpeed Insights/Ninja"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-left",
+                        "icon": "fas fa-user-tie",
+                        "year": "2017 - 2019"
+                    },
+                    "company": {
+                        "name": "MedGrupo",
+                        "title": "Desenvolvedor Front End - ",
+                        "state": null,
+                        "responsibilities": [
+                            "Líder Técnico | CodeOwner",
+                            "Modelagem de interface web/mobile e Desenvolvimento de componentes responsivos"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-right",
+                        "icon": "fas fa-address-book",
+                        "year": "2015 - 2016"
+                    },
+                    "company": {
+                        "name": null,
+                        "title": "Membro do Diretório Acadêmico",
+                        "state": null,
+                        "responsibilities": [
+                            "Organização de atividades inclusivas para 'calouros'",
+                            "Levantamento de ideias para melhor convívio entre os estudantes universitários"
+                        ]
+                    }
+                },
+                {
+                    "box": {
+                        "effect": "fade-left",
+                        "icon": "fas fa-graduation-cap",
+                        "year": "2014"
+                    },
+                    "company": {
+                        "name": null,
+                        "title": "Graduação - Engenharia da Computação",
+                        "state": null,
+                        "responsibilities": [
+                            "UEFS - Universidade Estadual de Feira de Santana",
+                            "Preparo para atuar nas áreas de desenvolvimento de hardware e software"
+                        ]
+                    }
+                }
+            ]
+        },
+        "publications": {
+            "title": "Publicações",
+            "list": [
+                {
+                    "icon": "fab fa-github",
+                    "title":"Git Stash",
+                    "description": "Conhecendo e utilizando um dos comandos mais práticos para o versionamento de seu código",
+                    "path": "https://medium.com/wooza/git-stash-conhecendo-e-utilizando-um-dos-comandos-mais-pr%C3%A1ticos-para-o-versionamento-de-seu-c%C3%B3digo-a4dab3ac70da"
+                },
+                {
+                    "icon": "fas fa-comments",
+                    "title":"Feedback",
+                    "description": "A importância e o poder",
+                    "path": "https://medium.com/@LuAnderson96/feedback-a-import%C3%A2ncia-e-o-poder-f430fe4e822"
+                },
+                {
+                    "icon": "fab fa-js-square",
+                    "title":"JavaScript",
+                    "description": "Callbacks, Promises e Async Functions",
+                    "path": "https://pt.slideshare.net/LuccasAnderson/trabalhando-de-forma-assncrona-com-javascript"
+                }
+            ],
+            "button": "Ver mais..."
+        },
+        "portfolio": {
+            "title": "Portfólio",
+            "projects": [
+                {
+                    "image": {
+                        "path": "../../../assets/divide-comigo-1.png",
+                        "alt": "divide-comigo"
+                    },
+                    "title": "Divide Comigo",
+                    "description": "Site para inscrições e divulgações de cursos, palestras e workshops",
+                    "skills": ["Axios", "React", "Styled Component", "Hooks"]
+                }
+            ],
+            "button": "Ver Mais Projetos"
+        },
+        "footer": {
+            "title": "Redes Sociais",
+            "adress": {
+                "country": "Brasil"
+            }
+        }
+    }
+}
